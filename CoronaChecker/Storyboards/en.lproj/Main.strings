@@ -1,0 +1,84 @@
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "1Px-xs-Omj"; */
+"1Px-xs-Omj.placeholder" = "Email";
+
+/* Class = "UILabel"; text = "EN"; ObjectID = "1c1-Vr-A2v"; */
+"1c1-Vr-A2v.text" = "EN";
+
+/* Class = "UILabel"; text = "Naam"; ObjectID = "4ha-4s-mRY"; */
+"4ha-4s-mRY.text" = "Naam";
+
+/* Class = "UIButton"; normalTitle = "Gast"; ObjectID = "9zi-GW-quB"; */
+"9zi-GW-quB.normalTitle" = "Gast";
+
+/* Class = "UILabel"; text = "Dit is een advies geen definitieve uitslag"; ObjectID = "A30-zC-m6z"; */
+"A30-zC-m6z.text" = "Dit is een advies geen definitieve uitslag";
+
+/* Class = "UIButton"; normalTitle = "Registreer"; ObjectID = "ALL-jC-JtR"; */
+"ALL-jC-JtR.normalTitle" = "Registreer";
+
+/* Class = "UILabel"; text = "Advies"; ObjectID = "DNt-JO-eee"; */
+"DNt-JO-eee.text" = "Advies";
+
+/* Class = "UILabel"; text = "Spraak aangetast"; ObjectID = "E9f-bp-9qL"; */
+"E9f-bp-9qL.text" = "Spraak aangetast";
+
+/* Class = "UILabel"; text = "Gegevens worden niet opgeslagen als gast"; ObjectID = "Ik2-nX-c6I"; */
+"Ik2-nX-c6I.text" = "Gegevens worden niet opgeslagen als gast";
+
+/* Class = "UILabel"; text = "Quarantaine"; ObjectID = "Me6-5W-8dV"; */
+"Me6-5W-8dV.text" = "Quarantaine";
+
+/* Class = "UILabel"; text = "Droge Hoest"; ObjectID = "Nff-ge-Nlm"; */
+"Nff-ge-Nlm.text" = "Droge Hoest";
+
+/* Class = "UITextField"; placeholder = "Wachtwoord"; ObjectID = "Pyz-Kf-1YC"; */
+"Pyz-Kf-1YC.placeholder" = "Wachtwoord";
+
+/* Class = "UILabel"; text = "Doe de test!"; ObjectID = "RAn-sE-8Nc"; */
+"RAn-sE-8Nc.text" = "Doe de test!";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Rqr-9q-Gsg"; */
+"Rqr-9q-Gsg.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Diarree"; ObjectID = "VsG-9k-nvR"; */
+"VsG-9k-nvR.text" = "Diarree";
+
+/* Class = "UILabel"; text = "Wilt u weten of u corona heeft?"; ObjectID = "WZC-GJ-aYd"; */
+"WZC-GJ-aYd.text" = "Wilt u weten of u corona heeft?";
+
+/* Class = "UILabel"; text = "Gebruiker Login"; ObjectID = "XHH-i8-qyj"; */
+"XHH-i8-qyj.text" = "Gebruiker Login";
+
+/* Class = "UILabel"; text = "Koorts"; ObjectID = "ZCM-71-5y8"; */
+"ZCM-71-5y8.text" = "Koorts";
+
+/* Class = "UILabel"; text = "Misselijkheid"; ObjectID = "ZkU-jQ-Iqn"; */
+"ZkU-jQ-Iqn.text" = "Misselijkheid";
+
+/* Class = "UILabel"; text = "Smaak aangetast"; ObjectID = "bLy-0t-bVN"; */
+"bLy-0t-bVN.text" = "Smaak aangetast";
+
+/* Class = "UILabel"; text = "Verkoudheid"; ObjectID = "cME-zn-bpI"; */
+"cME-zn-bpI.text" = "Verkoudheid";
+
+/* Class = "UILabel"; text = "Voelt u zich niet lekker en"; ObjectID = "dK0-Na-WUS"; */
+"dK0-Na-WUS.text" = "Voelt u zich niet lekker en";
+
+/* Class = "UILabel"; text = "Kortademigheid"; ObjectID = "mn5-8a-RrH"; */
+"mn5-8a-RrH.text" = "Kortademigheid";
+
+/* Class = "UILabel"; text = "Symptomen"; ObjectID = "pep-zl-sdU"; */
+"pep-zl-sdU.text" = "Symptomen";
+
+/* Class = "UILabel"; text = "NL"; ObjectID = "ror-db-uei"; */
+"ror-db-uei.text" = "NL";
+
+/* Class = "UILabel"; text = "Keelpijn"; ObjectID = "u8R-k5-6FF"; */
+"u8R-k5-6FF.text" = "Keelpijn";
+
+/* Class = "UILabel"; text = "Advies"; ObjectID = "ulq-Rt-hxZ"; */
+"ulq-Rt-hxZ.text" = "Advies";
+
+/* Class = "UILabel"; text = "Hoofdpijn"; ObjectID = "zTi-X2-RoG"; */
+"zTi-X2-RoG.text" = "Hoofdpijn";
