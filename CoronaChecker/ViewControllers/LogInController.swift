@@ -30,7 +30,7 @@ class LogInController: UIViewController {
         errorLabel.alpha = 0
     }
     
-    @IBAction func loginTapped(_ sender: Any) {
+    @IBAction private func loginTapped(_ sender: Any) {
     
         //create cleaned version of the textfields
         let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)

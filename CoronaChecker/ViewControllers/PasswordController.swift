@@ -7,8 +7,11 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 
 class PasswordController: UIViewController {
+    
+    let db = Firestore.firestore()
     
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var btnResetPassword: UIButton!
@@ -20,7 +23,7 @@ class PasswordController: UIViewController {
     
     }
     
-    @IBAction func btnResetPassword(_ sender: UIButton) {
+    @IBAction private func btnResetPassword(_ sender: UIButton) {
         
         Auth.auth().sendPasswordReset(withEmail: emailField.text!) { (error) in
             if error == nil {

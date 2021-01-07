@@ -12,19 +12,35 @@ import Firebase
 
 class RegisterController: UIViewController {
     
+   
+    
     //outlets
-    @IBOutlet weak var firstNameTextField: UITextField!
-    @IBOutlet weak var lastNameTextField: UITextField!
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var signUpButton: UIButton!
-    @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet private weak var firstNameTextField: UITextField!
+    @IBOutlet private weak var lastNameTextField: UITextField!
+    @IBOutlet private weak var emailTextField: UITextField!
+    @IBOutlet private weak var passwordTextField: UITextField!
+    @IBOutlet private weak var genderTextField: UITextField!
+    @IBOutlet private weak var birthdateTextField: UITextField!
+    @IBOutlet private weak var signUpButton: UIButton!
+    @IBOutlet private weak var errorLabel: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //function setupelements
         setUpElements()
+        
+        //func datepicker (line 148)
+        let datePicker = UIDatePicker()
+        
+        datePicker.datePickerMode = UIDatePicker.Mode.date
+        
+        datePicker.addTarget(self, action: #selector(RegisterController.datePickerValueChanged(sender:)), for: UIControl.Event.valueChanged)
+        
+        birthdateTextField.inputView = datePicker
+        
+        
     }
     
     //hide error labels
@@ -35,13 +51,15 @@ class RegisterController: UIViewController {
     
     
     //checks the fields and validate if the data is correct. if not it will give an error message in return
-    func validateFields() -> String? {
+    private func validateFields() -> String? {
         
         //check that all fields are filled in
         if firstNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             lastNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-            passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            genderTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            birthdateTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
             
             return "please fill in all fields."
         }
@@ -57,7 +75,7 @@ class RegisterController: UIViewController {
         return nil
     }
     
-    @IBAction func signUpTapped(_ sender: Any) {
+    @IBAction private func signUpTapped(_ sender: Any) {
         
         let error = validateFields()
         
@@ -73,6 +91,9 @@ class RegisterController: UIViewController {
             let last_Name = lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let gender = genderTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let birth_date = birthdateTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            
             
                 //create the user
             Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
@@ -85,12 +106,14 @@ class RegisterController: UIViewController {
                 }
                 else {
 
-                    //user is created succesfully (store first and lastname)
+                    //user is created succesfully (store firstname, lastname, gender and birth date)
                     let db = Firestore.firestore()
                     
                     db.collection("users").document(result!.user.uid).setData([
-                                           "first_name": first_Name,
-                                           "last_name": last_Name
+                                            "first_name": first_Name,
+                                            "last_name": last_Name,
+                                            "gender": gender,
+                                            "birth_date": birth_date
                                        ]) { (error) in
                         
                         if error != nil {
@@ -109,7 +132,7 @@ class RegisterController: UIViewController {
         }
     }
     
-    func showError(_ message:String) {
+    private func showError(_ message:String) {
         
         errorLabel.text = message
         errorLabel.alpha = 1
@@ -121,6 +144,20 @@ class RegisterController: UIViewController {
         
         view.window?.rootViewController = SymptomController
         view.window?.makeKeyAndVisible()
+    }
+    
+    //function for datepicker at registerscreen
+    @objc private func datePickerValueChanged(sender: UIDatePicker) {
+        
+        let formatter = DateFormatter()
+       
+        formatter.dateStyle = DateFormatter.Style.medium
+        formatter.timeStyle = DateFormatter.Style.none
+        formatter.locale = Locale(identifier: "nl_NL")
+        formatter.setLocalizedDateFormatFromTemplate("yyyy-MM-dd")
+        
+        
+        birthdateTextField.text = formatter.string(from: sender.date)
     }
 }
 

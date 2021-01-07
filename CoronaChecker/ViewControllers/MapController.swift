@@ -25,20 +25,37 @@ class MapController: UIViewController {
 
         
         
-        //testlocation eindhoven (Coolenlaan 3)
+        
+        
+        //testlocation Maxima MC Eindhoven
+        let secondlocation = MKPointAnnotation()
+        secondlocation.coordinate = CLLocationCoordinate2D(latitude: 51.4568053497647, longitude: 5.4877460127580004)
+        secondlocation.title = "Maxima MC Eindhoven"
+        secondlocation.subtitle = "Dominee Theodor Fliednerstraat 1"
+        mapView.addAnnotation(secondlocation)
+        
+        //testlocation Eindhoven (Coolenlaan 3)
         let annontation = MKPointAnnotation()
         annontation.coordinate = CLLocationCoordinate2D(latitude: 51.41588022418173, longitude: 5.471808511802878)
         annontation.title = "Corona testlocatie"
         annontation.subtitle = "Eindhoven Antoon Coolenlaan 3"
-        
         mapView.addAnnotation(annontation)
         
+        //testlocation Catharina Ziekenhuis Eindhoven
+        let thirdlocation = MKPointAnnotation()
+        thirdlocation.coordinate = CLLocationCoordinate2D(latitude: 51.46750039329034, longitude: 5.471953166026649)
+        thirdlocation.title = "Catharina Ziekenhuis"
+        thirdlocation.subtitle = "Michelangelolaan 2"
+        mapView.addAnnotation(thirdlocation)
+        
+        
+        //zoomed on the Netherlands
         let region = MKCoordinateRegion(center: annontation.coordinate, latitudinalMeters: 300000, longitudinalMeters: 300000 )
         mapView.setRegion(region, animated: true)
     }
         
     //URL for website
-    @IBAction func Btn_URL(_ sender: Any) {
+    @IBAction private func Btn_URL(_ sender: Any) {
         UIApplication.shared.open(URL(string: "https://coronachecker-ac165.web.app/symptomen.html")! as URL, options: [:], completionHandler: nil)
     }
     

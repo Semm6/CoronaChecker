@@ -12,18 +12,32 @@ import UIKit
 
 class Profile {
     
-    var name: String
+    var firstname: String
     var lastname: String
-    var age: Int
-    private var email: String
-    private var password: String
+    var email: String
+    var password: String
     
-    init(name:String, backname:String, age:Int, email:String, password:String) {
-        self.name = name
-        self.lastname = backname
-        self.age = age
-        self.email = email
-        self.password = password
+    init(firstname:String, lastname:String, email:String, password:String) {
+        
+        self.firstname = Profile.format(text: firstname)
+        self.lastname = Profile.format(text: lastname)
+        self.email = email.trimmingCharacters(in: .whitespacesAndNewlines)
+        self.password = password.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+    }
+    
+    //dont need to capilize names this function does it for you
+    private static func format(text:String) -> String {
+        let result = text.trimmingCharacters(in: .whitespacesAndNewlines).capitalized
+        
+        
+        return result
     }
 }
 
+//let userprofile1 = Profile(firstname: firstNameTextField.text!, lastname: lastNameTextField.text!, email: emailTextField.text!, password: passwordTextField.text!)
+
+
+//-----Reminders-----//
+
+//trimming charachters and whitespacesandnewlines makes sure there are no whitespaces (puts i back together)

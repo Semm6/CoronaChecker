@@ -12,13 +12,15 @@
 		9629A9B4258B8740004ECCE6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9629A9B3258B8740004ECCE6 /* Constants.swift */; };
 		9638DE1D2587F8D600EB5796 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9638DE1C2587F8D600EB5796 /* RegisterController.swift */; };
 		9656F26A258119E000571A83 /* AdviceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9656F269258119E000571A83 /* AdviceController.swift */; };
+		96585FED25A464330077DDC6 /* Advies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96585FEC25A464330077DDC6 /* Advies.swift */; };
 		9671D3A72583A79600320908 /* Symptom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9671D3A62583A79600320908 /* Symptom.swift */; };
 		969A8D9B258295D100639C3E /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969A8D9A258295D100639C3E /* LogInController.swift */; };
 		969A8D9E258295F800639C3E /* StartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969A8D9D258295F800639C3E /* StartController.swift */; };
 		969A8DAF25829C6F00639C3E /* SymptomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969A8DAE25829C6F00639C3E /* SymptomController.swift */; };
 		96A1F836258B690300874F3E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A1F835258B690300874F3E /* Utilities.swift */; };
-		96C1E6D72593CF6B0055EA6D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C1E6D62593CF6B0055EA6D /* Color.swift */; };
 		96C4F290258CFD22003D4CD5 /* PasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C4F28F258CFD22003D4CD5 /* PasswordController.swift */; };
+		96C5386325A5F64A00BBD953 /* AccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C5386225A5F64A00BBD953 /* AccountController.swift */; };
+		96C5386625A5FB8900BBD953 /* CurrrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C5386525A5FB8900BBD953 /* CurrrentUser.swift */; };
 		96D01F3E2587573500E42B51 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D01F3D2587573500E42B51 /* MapController.swift */; };
 		96D3BF03256FB9A60014AD16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D3BF02256FB9A60014AD16 /* AppDelegate.swift */; };
 		96D3BF05256FB9A60014AD16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D3BF04256FB9A60014AD16 /* SceneDelegate.swift */; };
@@ -36,13 +38,15 @@
 		9629A9B3258B8740004ECCE6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9638DE1C2587F8D600EB5796 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		9656F269258119E000571A83 /* AdviceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceController.swift; sourceTree = "<group>"; };
+		96585FEC25A464330077DDC6 /* Advies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advies.swift; sourceTree = "<group>"; };
 		9671D3A62583A79600320908 /* Symptom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symptom.swift; sourceTree = "<group>"; };
 		969A8D9A258295D100639C3E /* LogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
 		969A8D9D258295F800639C3E /* StartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartController.swift; sourceTree = "<group>"; };
 		969A8DAE25829C6F00639C3E /* SymptomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomController.swift; sourceTree = "<group>"; };
 		96A1F835258B690300874F3E /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		96C1E6D62593CF6B0055EA6D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		96C4F28F258CFD22003D4CD5 /* PasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordController.swift; sourceTree = "<group>"; };
+		96C5386225A5F64A00BBD953 /* AccountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountController.swift; sourceTree = "<group>"; };
+		96C5386525A5FB8900BBD953 /* CurrrentUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrrentUser.swift; sourceTree = "<group>"; };
 		96D01F3D2587573500E42B51 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		96D3BEFF256FB9A60014AD16 /* CoronaChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoronaChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96D3BF02256FB9A60014AD16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +89,7 @@
 				9638DE1C2587F8D600EB5796 /* RegisterController.swift */,
 				96C4F28F258CFD22003D4CD5 /* PasswordController.swift */,
 				96D01F3D2587573500E42B51 /* MapController.swift */,
+				96C5386225A5F64A00BBD953 /* AccountController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -93,8 +98,9 @@
 			isa = PBXGroup;
 			children = (
 				9671D3A62583A79600320908 /* Symptom.swift */,
+				96585FEC25A464330077DDC6 /* Advies.swift */,
 				961687A525878E29003291A1 /* Profile.swift */,
-				96C1E6D62593CF6B0055EA6D /* Color.swift */,
+				96C5386525A5FB8900BBD953 /* CurrrentUser.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -277,6 +283,9 @@
 			files = (
 				96D01F3E2587573500E42B51 /* MapController.swift in Sources */,
 				96C4F290258CFD22003D4CD5 /* PasswordController.swift in Sources */,
+				96585FED25A464330077DDC6 /* Advies.swift in Sources */,
+				96C5386325A5F64A00BBD953 /* AccountController.swift in Sources */,
+				96C5386625A5FB8900BBD953 /* CurrrentUser.swift in Sources */,
 				969A8D9B258295D100639C3E /* LogInController.swift in Sources */,
 				96A1F836258B690300874F3E /* Utilities.swift in Sources */,
 				96D3BF03256FB9A60014AD16 /* AppDelegate.swift in Sources */,
@@ -284,7 +293,6 @@
 				9638DE1D2587F8D600EB5796 /* RegisterController.swift in Sources */,
 				969A8D9E258295F800639C3E /* StartController.swift in Sources */,
 				96D3BF05256FB9A60014AD16 /* SceneDelegate.swift in Sources */,
-				96C1E6D72593CF6B0055EA6D /* Color.swift in Sources */,
 				961687A625878E29003291A1 /* Profile.swift in Sources */,
 				9671D3A72583A79600320908 /* Symptom.swift in Sources */,
 				969A8DAF25829C6F00639C3E /* SymptomController.swift in Sources */,

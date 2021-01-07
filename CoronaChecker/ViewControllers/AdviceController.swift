@@ -10,11 +10,12 @@ import UIKit
     class AdviceController: UIViewController {
 
         //selectedSymptom Optional
-        var selectedSymptom: Symptom1?
+        //var selectedSymptom: Symptom1?
+        var selectedAdvice: Advies1?
         
         
         
-        @IBOutlet weak var Naam: UILabel!
+        
         @IBOutlet weak var Advies: UILabel!
         @IBOutlet weak var Quarantaine: UILabel!
         
@@ -25,12 +26,19 @@ import UIKit
 
                     //if let essentially saves you from a crash. If the variable doesn't have a value when it hits the lines where you use the variables, it will skip over those lines, saving you from the crash.
                     
-                    if let selectedSymptom = selectedSymptom {
+                    //if let selectedSymptom = selectedSymptom {
                         
-                        Naam.text = selectedSymptom.naam
-                        Advies.text = selectedSymptom.advies
-                        Quarantaine.text = selectedSymptom.quarantaine
+                        //Naam.text = selectedSymptom.naam
+                        //Advies.text = selectedSymptom.advies
+                        //Quarantaine.text = selectedSymptom.quarantaine
+                    //}
+                    
+                    if let selectedAdvice = selectedAdvice {
+                        Advies.text = selectedAdvice.advies
+                        Quarantaine.text = selectedAdvice.quarantaine
                     }
+                    
+                    
                     
                     
                  

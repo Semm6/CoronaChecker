@@ -12,11 +12,9 @@ import UIKit
 struct Symptom1 {
     
     var naam: String
-    var advies: String
-    var quarantaine: String
+    var danger: Int
     
 }
-
 
 
 //-----reminders-----//
@@ -24,3 +22,11 @@ struct Symptom1 {
 
 //structurs are for data
 //classes are for objects
+
+//structs
+// - recommended to use structs by default
+// - structs are better for datatypes
+
+//classes
+// - make and easy subclass of class like (viewcontroller)
+
