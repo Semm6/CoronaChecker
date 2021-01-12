@@ -12,7 +12,7 @@
 		9629A9B4258B8740004ECCE6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9629A9B3258B8740004ECCE6 /* Constants.swift */; };
 		9638DE1D2587F8D600EB5796 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9638DE1C2587F8D600EB5796 /* RegisterController.swift */; };
 		9656F26A258119E000571A83 /* AdviceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9656F269258119E000571A83 /* AdviceController.swift */; };
-		96585FED25A464330077DDC6 /* Advies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96585FEC25A464330077DDC6 /* Advies.swift */; };
+		96585FED25A464330077DDC6 /* Advice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96585FEC25A464330077DDC6 /* Advice.swift */; };
 		9671D3A72583A79600320908 /* Symptom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9671D3A62583A79600320908 /* Symptom.swift */; };
 		9689EAA525AA1FCB0034C20C /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9689EAA425AA1FCB0034C20C /* Location.swift */; };
 		969A8D9B258295D100639C3E /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969A8D9A258295D100639C3E /* LogInController.swift */; };
@@ -28,6 +28,7 @@
 		96D3BF0C256FB9A70014AD16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96D3BF0B256FB9A70014AD16 /* Assets.xcassets */; };
 		96D3BF0F256FB9A70014AD16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96D3BF0D256FB9A70014AD16 /* LaunchScreen.storyboard */; };
 		96D573552588EE0A00F54D50 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96D573542588EE0A00F54D50 /* GoogleService-Info.plist */; };
+		96DE70E425ADADAC00576D43 /* showAdvice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DE70E325ADADAC00576D43 /* showAdvice.swift */; };
 		96FE1CC325AC8D41006CB53A /* CreateUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FE1CC225AC8D40006CB53A /* CreateUser.swift */; };
 		96FE1CC625AC9411006CB53A /* ShowAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FE1CC525AC9411006CB53A /* ShowAlert.swift */; };
 /* End PBXBuildFile section */
@@ -40,7 +41,7 @@
 		9629A9B3258B8740004ECCE6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9638DE1C2587F8D600EB5796 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		9656F269258119E000571A83 /* AdviceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceController.swift; sourceTree = "<group>"; };
-		96585FEC25A464330077DDC6 /* Advies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advies.swift; sourceTree = "<group>"; };
+		96585FEC25A464330077DDC6 /* Advice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advice.swift; sourceTree = "<group>"; };
 		9671D3A62583A79600320908 /* Symptom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symptom.swift; sourceTree = "<group>"; };
 		9689EAA425AA1FCB0034C20C /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		969A8D9A258295D100639C3E /* LogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
@@ -58,6 +59,7 @@
 		96D3BF0E256FB9A70014AD16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96D3BF10256FB9A70014AD16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96D573542588EE0A00F54D50 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		96DE70E325ADADAC00576D43 /* showAdvice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showAdvice.swift; sourceTree = "<group>"; };
 		96FE1CC225AC8D40006CB53A /* CreateUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUser.swift; sourceTree = "<group>"; };
 		96FE1CC525AC9411006CB53A /* ShowAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAlert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,17 +100,18 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		9671D3A52583A75A00320908 /* Models */ = {
+		9671D3A52583A75A00320908 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				9671D3A62583A79600320908 /* Symptom.swift */,
-				96585FEC25A464330077DDC6 /* Advies.swift */,
+				96585FEC25A464330077DDC6 /* Advice.swift */,
 				9689EAA425AA1FCB0034C20C /* Location.swift */,
 				961687A525878E29003291A1 /* Profile.swift */,
 				96FE1CC225AC8D40006CB53A /* CreateUser.swift */,
+				96DE70E325ADADAC00576D43 /* showAdvice.swift */,
 				96FE1CC525AC9411006CB53A /* ShowAlert.swift */,
 			);
-			path = Models;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		96A1F834258B68EB00874F3E /* Helpers */ = {
@@ -150,7 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				96A1F834258B68EB00874F3E /* Helpers */,
-				9671D3A52583A75A00320908 /* Models */,
+				9671D3A52583A75A00320908 /* Classes */,
 				96C709C7257AC39300550C8F /* Storyboards */,
 				9656F2672581182100571A83 /* ViewControllers */,
 				96D3BF0B256FB9A70014AD16 /* Assets.xcassets */,
@@ -289,12 +292,13 @@
 			files = (
 				96D01F3E2587573500E42B51 /* MapController.swift in Sources */,
 				96C4F290258CFD22003D4CD5 /* PasswordController.swift in Sources */,
-				96585FED25A464330077DDC6 /* Advies.swift in Sources */,
+				96585FED25A464330077DDC6 /* Advice.swift in Sources */,
 				96C5386325A5F64A00BBD953 /* AccountController.swift in Sources */,
 				9689EAA525AA1FCB0034C20C /* Location.swift in Sources */,
 				969A8D9B258295D100639C3E /* LogInController.swift in Sources */,
 				96A1F836258B690300874F3E /* Utilities.swift in Sources */,
 				96D3BF03256FB9A60014AD16 /* AppDelegate.swift in Sources */,
+				96DE70E425ADADAC00576D43 /* showAdvice.swift in Sources */,
 				9656F26A258119E000571A83 /* AdviceController.swift in Sources */,
 				9638DE1D2587F8D600EB5796 /* RegisterController.swift in Sources */,
 				969A8D9E258295F800639C3E /* StartController.swift in Sources */,

@@ -9,8 +9,8 @@ import UIKit
 
     class AdviceController: UIViewController {
 
-        //selectedSymptom Optional
-        //var selectedSymptom: Symptom1?
+        
+        var selectedSymptom: Symptom?
         var selectedAdvice: Advies1?
         
         

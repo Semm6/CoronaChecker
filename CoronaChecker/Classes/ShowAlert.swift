@@ -7,7 +7,7 @@
 
 import UIKit
 
-//-----class AlertHandler-----//
+//-----class alertHandler-----//
 
 class AlertHandler {
     

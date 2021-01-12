@@ -20,10 +20,3 @@ class Symptom {
         self.danger = danger
     }
 }
-
-
-
-
-
-
-

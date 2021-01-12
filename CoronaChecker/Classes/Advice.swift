@@ -1,5 +1,5 @@
 //
-//  Advies.swift
+//  Advice.swift
 //  CoronaChecker
 //
 //  Created by Sem de Wilde on 05/01/2021.
