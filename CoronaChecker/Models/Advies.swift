@@ -7,10 +7,15 @@
 
 import UIKit
 
-struct Advies1 {
+//-----class advice-----//
+
+class Advies1 {
     
     var advies: String
     var quarantaine: String
     
-    
+    init(advies:String, quarantaine:String) {
+        self.advies = advies
+        self.quarantaine = quarantaine
+    }
 }

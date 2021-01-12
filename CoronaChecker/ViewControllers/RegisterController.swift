@@ -95,44 +95,14 @@ class RegisterController: UIViewController {
             let birth_date = birthdateTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             
             
-                //create the user
-            Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
+            let User1 = Profile(firstname: first_Name, lastname: last_Name, email: email, password: password, gender: gender, birthdate: birth_date)
+            CreateUsers.CreateUser(user: User1)
             
-                //check for errors (if error is not equal to nill)
-                if err != nil {
-                    
-                    //there was an error creating the user
-                    self.showError("Error creating user")
-                }
-                else {
-
-                    //user is created succesfully (store firstname, lastname, gender and birth date)
-                    let db = Firestore.firestore()
-                    
-                    db.collection("users").document(result!.user.uid).setData([
-                                            "first_name": first_Name,
-                                            "last_name": last_Name,
-                                            "gender": gender,
-                                            "birth_date": birth_date
-                                       ]) { (error) in
-                        
-                        if error != nil {
-                            //show error message
-                            self.showError("Error saving user data")
-                        }
-                    }
-                    
-                    //transition to symptom screen
-                    self.transitionToHome()
-                    
-                }
-                
-                
-            }
+            transitionToHome()
         }
     }
     
-    private func showError(_ message:String) {
+    func showError(_ message:String) {
         
         errorLabel.text = message
         errorLabel.alpha = 1

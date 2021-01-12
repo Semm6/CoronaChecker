@@ -7,26 +7,23 @@
 
 import UIKit
 
-//-----structur for symptom-----//
 
-struct Symptom1 {
+//-----class symptom-----//
+
+class Symptom {
     
     var naam: String
     var danger: Int
     
+    init(naam:String, danger:Int) {
+        self.naam = naam
+        self.danger = danger
+    }
 }
 
 
-//-----reminders-----//
 
 
-//structurs are for data
-//classes are for objects
 
-//structs
-// - recommended to use structs by default
-// - structs are better for datatypes
 
-//classes
-// - make and easy subclass of class like (viewcontroller)
 

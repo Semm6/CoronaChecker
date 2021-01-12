@@ -23,15 +23,6 @@ import UIKit
                 override func viewDidLoad() {
                 super.viewDidLoad()
                     
-
-                    //if let essentially saves you from a crash. If the variable doesn't have a value when it hits the lines where you use the variables, it will skip over those lines, saving you from the crash.
-                    
-                    //if let selectedSymptom = selectedSymptom {
-                        
-                        //Naam.text = selectedSymptom.naam
-                        //Advies.text = selectedSymptom.advies
-                        //Quarantaine.text = selectedSymptom.quarantaine
-                    //}
                     
                     if let selectedAdvice = selectedAdvice {
                         Advies.text = selectedAdvice.advies

@@ -11,34 +11,35 @@ import UIKit
 class SymptomController: UIViewController {
     
     //? is for optional. So it doesn't crash
-    var selectedSymptom: Symptom1?
+    var selectedSymptom: Symptom?
     var selectedAdvice: Advies1?
     
     
     
     //array (depend on witch switch you switch you get a different advice)
     //these are all objects in arrays
-    var symptoms: [Symptom1] = [
+    //constructor overloading
+    var symptoms: [Symptom] = [
         
-          Symptom1(naam: "Misselijkheid", danger: 1),
+          Symptom(naam: "Misselijkheid", danger: 1),
         
-          Symptom1(naam: "Verkoudheid", danger: 0),
+          Symptom(naam: "Verkoudheid", danger: 0),
         
-          Symptom1(naam: "Kortademigheid", danger: 2),
+          Symptom(naam: "Kortademigheid", danger: 2),
         
-          Symptom1(naam: "Koorts", danger: 2),
+          Symptom(naam: "Koorts", danger: 2),
         
-          Symptom1(naam: "Keelpijn", danger: 1),
+          Symptom(naam: "Keelpijn", danger: 1),
         
-          Symptom1(naam: "Hoofdpijn", danger: 0),
+          Symptom(naam: "Hoofdpijn", danger: 0),
         
-          Symptom1(naam: "Droge hoest", danger: 1),
+          Symptom(naam: "Droge hoest", danger: 1),
         
-          Symptom1(naam: "Diarree", danger: 2),
+          Symptom(naam: "Diarree", danger: 2),
         
-          Symptom1(naam: "Spraak aangetast", danger: 3),
+          Symptom(naam: "Spraak aangetast", danger: 3),
         
-          Symptom1(naam: "Smaak aangetast", danger: 3)
+          Symptom(naam: "Smaak aangetast", danger: 3)
     ]
     
     //array for advices

@@ -61,7 +61,7 @@ class LogInController: UIViewController {
 
 }
     
-    //when you are refferencing stuff inside of closures ( {} ) then you always have to use (self)
+    
     
     
   

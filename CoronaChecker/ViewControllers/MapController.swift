@@ -24,14 +24,11 @@ class MapController: UIViewController {
         if let windowScene = UIApplication.shared.windows.first?.windowScene { SKStoreReviewController.requestReview(in: windowScene) }
 
         
-        
-        
-        
         //testlocation Maxima MC Eindhoven
         let secondlocation = MKPointAnnotation()
         secondlocation.coordinate = CLLocationCoordinate2D(latitude: 51.4568053497647, longitude: 5.4877460127580004)
-        secondlocation.title = "Maxima MC Eindhoven"
-        secondlocation.subtitle = "Dominee Theodor Fliednerstraat 1"
+        secondlocation.title = "location1.title"
+        secondlocation.subtitle = "location1.subtitle"
         mapView.addAnnotation(secondlocation)
         
         //testlocation Eindhoven (Coolenlaan 3)

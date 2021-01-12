@@ -1,5 +1,5 @@
 //
-//  Person.swift
+//  Profile.swift
 //  CoronaChecker
 //
 //  Created by Sem de Wilde on 14/12/2020.
@@ -16,13 +16,17 @@ class Profile {
     var lastname: String
     var email: String
     var password: String
+    var gender: String
+    var birthdate: String
     
-    init(firstname:String, lastname:String, email:String, password:String) {
+    init(firstname:String, lastname:String, email:String, password:String, gender:String, birthdate:String) {
         
         self.firstname = Profile.format(text: firstname)
         self.lastname = Profile.format(text: lastname)
         self.email = email.trimmingCharacters(in: .whitespacesAndNewlines)
         self.password = password.trimmingCharacters(in: .whitespacesAndNewlines)
+        self.gender = gender.trimmingCharacters(in: .whitespacesAndNewlines)
+        self.birthdate = birthdate.trimmingCharacters(in: .whitespacesAndNewlines)
         
     }
     
@@ -30,14 +34,8 @@ class Profile {
     private static func format(text:String) -> String {
         let result = text.trimmingCharacters(in: .whitespacesAndNewlines).capitalized
         
-        
         return result
     }
 }
 
-//let userprofile1 = Profile(firstname: firstNameTextField.text!, lastname: lastNameTextField.text!, email: emailTextField.text!, password: passwordTextField.text!)
 
-
-//-----Reminders-----//
-
-//trimming charachters and whitespacesandnewlines makes sure there are no whitespaces (puts i back together)
