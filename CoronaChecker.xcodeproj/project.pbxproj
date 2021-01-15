@@ -14,7 +14,6 @@
 		9656F26A258119E000571A83 /* AdviceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9656F269258119E000571A83 /* AdviceController.swift */; };
 		96585FED25A464330077DDC6 /* Advice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96585FEC25A464330077DDC6 /* Advice.swift */; };
 		9671D3A72583A79600320908 /* Symptom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9671D3A62583A79600320908 /* Symptom.swift */; };
-		9689EAA525AA1FCB0034C20C /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9689EAA425AA1FCB0034C20C /* Location.swift */; };
 		969A8D9B258295D100639C3E /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969A8D9A258295D100639C3E /* LogInController.swift */; };
 		969A8D9E258295F800639C3E /* StartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969A8D9D258295F800639C3E /* StartController.swift */; };
 		969A8DAF25829C6F00639C3E /* SymptomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969A8DAE25829C6F00639C3E /* SymptomController.swift */; };
@@ -43,7 +42,6 @@
 		9656F269258119E000571A83 /* AdviceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceController.swift; sourceTree = "<group>"; };
 		96585FEC25A464330077DDC6 /* Advice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advice.swift; sourceTree = "<group>"; };
 		9671D3A62583A79600320908 /* Symptom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symptom.swift; sourceTree = "<group>"; };
-		9689EAA425AA1FCB0034C20C /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		969A8D9A258295D100639C3E /* LogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
 		969A8D9D258295F800639C3E /* StartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartController.swift; sourceTree = "<group>"; };
 		969A8DAE25829C6F00639C3E /* SymptomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomController.swift; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 			children = (
 				9671D3A62583A79600320908 /* Symptom.swift */,
 				96585FEC25A464330077DDC6 /* Advice.swift */,
-				9689EAA425AA1FCB0034C20C /* Location.swift */,
 				961687A525878E29003291A1 /* Profile.swift */,
 				96FE1CC225AC8D40006CB53A /* CreateUser.swift */,
 				96DE70E325ADADAC00576D43 /* showAdvice.swift */,
@@ -294,7 +291,6 @@
 				96C4F290258CFD22003D4CD5 /* PasswordController.swift in Sources */,
 				96585FED25A464330077DDC6 /* Advice.swift in Sources */,
 				96C5386325A5F64A00BBD953 /* AccountController.swift in Sources */,
-				9689EAA525AA1FCB0034C20C /* Location.swift in Sources */,
 				969A8D9B258295D100639C3E /* LogInController.swift in Sources */,
 				96A1F836258B690300874F3E /* Utilities.swift in Sources */,
 				96D3BF03256FB9A60014AD16 /* AppDelegate.swift in Sources */,

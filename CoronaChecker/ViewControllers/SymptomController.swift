@@ -36,7 +36,7 @@ class SymptomController: UIViewController {
             }
     
 
-        @IBAction func buttonClicked(_ sender: UIButton) {
+        @IBAction private func buttonClicked(_ sender: UIButton) {
             
             let symptomSliders: [UISwitch] = [misselijkheid, verkoudheid, kortademigheid, koorts, keelpijn, hoofdpijn, drogehoest, diarree, spraakaangetast, smaakaangetast]
         

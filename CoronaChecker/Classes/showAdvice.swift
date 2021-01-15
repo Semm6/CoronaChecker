@@ -9,7 +9,7 @@ import UIKit
 
 //class showadvice with function getAdvice
 
-class showAdvice {
+public class showAdvice {
     
     
     var selectedSymptom: Symptom?

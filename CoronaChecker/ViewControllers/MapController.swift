@@ -27,15 +27,15 @@ class MapController: UIViewController {
         //testlocation Maxima MC Eindhoven
         let secondlocation = MKPointAnnotation()
         secondlocation.coordinate = CLLocationCoordinate2D(latitude: 51.4568053497647, longitude: 5.4877460127580004)
-        secondlocation.title = "location1.title"
-        secondlocation.subtitle = "location1.subtitle"
+        secondlocation.title = "Maxima MC ziekenhuis"
+        secondlocation.subtitle = "Dominee Theodor Fliednerstraat 1"
         mapView.addAnnotation(secondlocation)
         
         //testlocation Eindhoven (Coolenlaan 3)
         let annontation = MKPointAnnotation()
         annontation.coordinate = CLLocationCoordinate2D(latitude: 51.41588022418173, longitude: 5.471808511802878)
         annontation.title = "Corona testlocatie"
-        annontation.subtitle = "Eindhoven Antoon Coolenlaan 3"
+        annontation.subtitle = "Antoon Coolenlaan 3"
         mapView.addAnnotation(annontation)
         
         //testlocation Catharina Ziekenhuis Eindhoven

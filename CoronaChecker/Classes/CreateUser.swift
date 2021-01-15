@@ -11,7 +11,7 @@ import FirebaseAuth
 
 //-----class CreateUsers-----//
 
-class CreateUsers {
+public class CreateUsers {
     
     //create the user
     static func CreateUser(user: Profile) {

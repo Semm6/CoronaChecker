@@ -10,7 +10,7 @@ import UIKit
 //-----class profile-----//
 //email and password are capped
 
-class Profile {
+public class Profile {
     
     var firstname: String
     var lastname: String

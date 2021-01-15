@@ -9,7 +9,7 @@ import UIKit
 
 //-----class alertHandler-----//
 
-class AlertHandler {
+public class AlertHandler {
     
     var title: String
     var message: String

@@ -10,7 +10,7 @@ import UIKit
 
 //-----class symptom-----//
 
-class Symptom {
+public class Symptom {
     
     var naam: String
     var danger: Int

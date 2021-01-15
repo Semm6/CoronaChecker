@@ -9,7 +9,7 @@ import UIKit
 
 //-----class advice-----//
 
-class Advies1 {
+public class Advies1 {
     
     var advies: String
     var quarantaine: String

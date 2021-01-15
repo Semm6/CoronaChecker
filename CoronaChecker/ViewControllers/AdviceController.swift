@@ -13,9 +13,7 @@ import UIKit
         var selectedSymptom: Symptom?
         var selectedAdvice: Advies1?
         
-        
-        
-        
+
         @IBOutlet weak var Advies: UILabel!
         @IBOutlet weak var Quarantaine: UILabel!
         

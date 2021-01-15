@@ -15,14 +15,14 @@ class RegisterController: UIViewController {
    
     
     //outlets
-    @IBOutlet private weak var firstNameTextField: UITextField!
-    @IBOutlet private weak var lastNameTextField: UITextField!
-    @IBOutlet private weak var emailTextField: UITextField!
-    @IBOutlet private weak var passwordTextField: UITextField!
-    @IBOutlet private weak var genderTextField: UITextField!
-    @IBOutlet private weak var birthdateTextField: UITextField!
-    @IBOutlet private weak var signUpButton: UIButton!
-    @IBOutlet private weak var errorLabel: UILabel!
+    @IBOutlet  weak var firstNameTextField: UITextField!
+    @IBOutlet  weak var lastNameTextField: UITextField!
+    @IBOutlet  weak var emailTextField: UITextField!
+    @IBOutlet  weak var passwordTextField: UITextField!
+    @IBOutlet  weak var genderTextField: UITextField!
+    @IBOutlet  weak var birthdateTextField: UITextField!
+    @IBOutlet  weak var signUpButton: UIButton!
+    @IBOutlet  weak var errorLabel: UILabel!
     
     
     override func viewDidLoad() {
@@ -51,7 +51,8 @@ class RegisterController: UIViewController {
     
     
     //checks the fields and validate if the data is correct. if not it will give an error message in return
-    private func validateFields() -> String? {
+    func validateFields() -> String? {
+     
         
         //check that all fields are filled in
         if firstNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
@@ -94,7 +95,7 @@ class RegisterController: UIViewController {
             let gender = genderTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let birth_date = birthdateTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             
-            
+            //create user
             let User1 = Profile(firstname: first_Name, lastname: last_Name, email: email, password: password, gender: gender, birthdate: birth_date)
             CreateUsers.CreateUser(user: User1)
             
